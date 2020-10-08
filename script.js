@@ -17,8 +17,10 @@ $("#userInputBtn").on("click", function (event) {
         console.log(response);
         console.log(queryURL); 
         
-        var cityNameEl =$("#cityNameId");
-        var iconEl = $("#iconSpanId");
+        var cityNameEl = $("#cityNameId");
+        var tempEl = $("#cityTemp");
+        var humidEl = $("#cityHumidity");
+        var windEl = $("#cityWind");
         
         // getting city name
         var cityName = response.name;
@@ -43,9 +45,27 @@ $("#userInputBtn").on("click", function (event) {
         var iconImgEl = $("<img>");
         iconImgEl.attr("src", iconURL);
         
-        // populating the current weather card header with the city name, date, and populating the span with the weather icon
+        // populating the current weather card header with the city name, date, and creating a span and populating it with the weather icon
+        cityNameEl.html("");
+        var span = $("<span>");
+        span.html(iconImgEl);
+        cityNameEl.prepend(span);
         cityNameEl.prepend(cityName + " " + myDate);
-        iconEl.html(iconImgEl);
+
+        // getting tempature, humidity, and wind speed
+        var temp = response.main.temp;
+        console.log(temp);
+        var humidity = response.main.humidity;
+        console.log(humidity);
+        var wind = response.wind.speed;
+        console.log(wind);
+        //populating the temp, humidity, and wind speed elements
+        tempEl.html("");
+        tempEl.prepend("Tempature: " + temp + " F");
+        humidEl.html("");
+        humidEl.prepend("Humidity: " + humidity + "%");
+        windEl.html("");
+        windEl.prepend("Wind Speed: " + wind + "MPH");
 
     });
 

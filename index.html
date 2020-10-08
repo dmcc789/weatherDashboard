@@ -15,100 +15,115 @@
       </div>
   </div>
     <div class="container">
-        <div class="row">
-            <!-- left side search & previous searches -->
-            <div class="col-md-3">
-              <div class="row">
-                <h5>Search for a City:</h5>
-                <form class="form-inline">
-                  <textarea class="form-control" id="userCityInput" rows="1"></textarea>
-                  <button type="button" class="btn btn-primary" id="userInputBtn">Search</button>
-                </form>
-              </div>
-              <br>
-              <div class="row">
-                <button type="button" class="btn btn-light btn-block text-left">Light</button>
-              </div>
-            </div>
-
-            <!-- Main/Right Side Current Weather Data & 5 day forecast -->
-            <div class="col-md-9">
-                <!--Current Weather Data goes here-->
-                <div class="card border-dark">
-                  <div class="card-body text-dark">
-                    <h5 class="card-title" id="cityNameId"><span id="iconSpanId"></span></h5>
-                    <p class="card-text">Temp</p>
-                    <p class="card-text">Temp</p>
-                  </div>
-                </div>
-              <br>
-              <div class="row">
-                <div class="col-md-12">
+      <div class="row">
+    
+        <!-- left side search & previous searches -->
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <h5>Search for a City:</h5>
                   <br>
-                  <h5> 5-Day Forecast</h5>
+                  <form class="form-inline">
+                    <textarea class="form-control" id="userCityInput" rows="1"></textarea>
+                    <button type="button" class="btn btn-primary" id="userInputBtn">Search</button>
+                  </form>
                 </div>
               </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <button type="button" class="btn btn-outline-secondary btn-block text-left">Previous City</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Main/Right Side Current Weather Data & 5 day forecast -->
+        <div class="col-md-8">
+          <!--Current Weather Data goes here-->
+          <div class="card border-dark">
+            <div class="card-body text-dark">
+              <h5 class="card-title" id="cityNameId">City Date Weather</h5>
+              <p class="card-text" id="cityTemp">Temp</p>
+              <p class="card-text" id="cityHumidity">Temp</p>
+              <p class="card-text" id="cityWind">Temp</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
               <br>
-              <div class="row">
-                <!--Five Day Forecast gets dropped in here-->
-                <div class="col-md-12">
-                  <div class="card-deck">
-                    <div class="card text-white bg-primary mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title">DATE</h5>
-                        <div class="fiveDayIcon">
-                          <!--weather icon-->
-                        </div>
-                        <p class="card-text">Temp: 99</p>
-                        <p class="card-text">Humidity: 99</p>
-                      </div>
+              <h5> 5-Day Forecast</h5>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <!--Five Day Forecast gets dropped in here-->
+            <div class="col-md-12">
+              <div class="card-deck">
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">DATE</h5>
+                    <div class="fiveDayIcon">
+                      <!--weather icon-->
                     </div>
-                    <div class="card text-white bg-primary mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title">DATE</h5>
-                        <div class="fiveDayIcon">
-                          <!--weather icon-->
-                        </div>
-                        <p class="card-text">Temp: 99</p>
-                        <p class="card-text">Humidity: 99</p>
-                      </div>
+                    <p class="card-text">Temp: 99</p>
+                    <p class="card-text">Humidity: 99</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">DATE</h5>
+                    <div class="fiveDayIcon">
+                      <!--weather icon-->
                     </div>
-                    <div class="card text-white bg-primary mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title">DATE</h5>
-                        <div class="fiveDayIcon">
-                          <!--weather icon-->
-                        </div>
-                        <p class="card-text">Temp: 99</p>
-                        <p class="card-text">Humidity: 99</p>
-                      </div>
+                    <p class="card-text">Temp: 99</p>
+                    <p class="card-text">Humidity: 99</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">DATE</h5>
+                    <div class="fiveDayIcon">
+                      <!--weather icon-->
                     </div>
-                    <div class="card text-white bg-primary mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title">DATE</h5>
-                        <div class="fiveDayIcon">
-                          <!--weather icon-->
-                        </div>
-                        <p class="card-text">Temp: 99</p>
-                        <p class="card-text">Humidity: 99</p>
-                      </div>
+                    <p class="card-text">Temp: 99</p>
+                    <p class="card-text">Humidity: 99</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">DATE</h5>
+                    <div class="fiveDayIcon">
+                      <!--weather icon-->
                     </div>
-                    <div class="card text-white bg-primary mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title">DATE</h5>
-                        <div class="fiveDayIcon">
-                          <!--weather icon-->
-                        </div>
-                        <p class="card-text">Temp: 99</p>
-                        <p class="card-text">Humidity: 99</p>
-                      </div>
+                    <p class="card-text">Temp: 99</p>
+                    <p class="card-text">Humidity: 99</p>
+                  </div>
+                </div>
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">DATE</h5>
+                    <div class="fiveDayIcon">
+                      <!--weather icon-->
                     </div>
+                    <p class="card-text">Temp: 99</p>
+                    <p class="card-text">Humidity: 99</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-
+      </div>
+    
     </div>
 
 
