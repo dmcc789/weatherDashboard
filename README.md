@@ -1,4 +1,5 @@
 # weatherDashboard
+## https://dmcc789.github.io/weatherDashboard/
 
 ## Description 
 
@@ -9,6 +10,7 @@ In the Current Weather section the Open Weather API is called and utilized to po
 In the 5 day forecast the Open Weather API is called and utilized to populate the next 5 dates, weather icons, tempature, and humidity.  
 
 When the user searches for a city the application stores that city utilizing local storage.  When the user returns to the site their previously searched city data is still presented.  
+<<<<<<< HEAD
 
 ## [Link to Deployed Application](https://dmcc789.github.io/weatherDashboard/)
 
@@ -26,3 +28,5 @@ When the user searches for a city the application stores that city utilizing loc
 ## License
 Copyright 2020 Deirdre Cruice Cabanel
 ### [MIT License](https://opensource.org/licenses/MIT)
+=======
+>>>>>>> dbeeac6f8da3719dffdd6753edd65a6cd73d4ee8
