@@ -24,5 +24,5 @@ When the user searches for a city the application stores that city utilizing loc
 ![Application Screen Shot](weatherpic.png) 
 
 ## License
-Copyright 2020 Deirdre Cruice Cabanel
 ### [MIT License](https://opensource.org/licenses/MIT)
+Copyright 2020 Deirdre Cruice Cabanel
